@@ -1,1 +1,28 @@
 
+ const form=document.querySelector(".login-form");
+
+ form.addEventListener("submit", e=>{
+    e.preventDefault();
+    const emailInput = form.elements.email;
+    const passwordInput = form.elements.password;
+
+    let isEmpty = false;
+
+    if (emailInput.value.trim() === "" || passwordInput.value.trim() === "") {
+        isEmpty = true;
+    }
+
+    if (isEmpty) {
+    alert("All form fields must be filled in");
+    return;
+    }
+  const userData = {
+    email: emailInput.value.trim(),
+    password: passwordInput.value.trim(),
+  };
+    console.log(userData);
+    form.reset();
+
+ });
+
+
