@@ -150,3 +150,36 @@ ul {
 .login-form button:hover{
    background-color:#6c8cff;
 }
+/* task-5 */
+.widget{
+  display: flex;
+  flex-direction:column ;
+  justify-content: center;
+  align-items: center;
+  height: 290px;
+  width: 345px;
+  padding: auto;
+
+  border-radius: 8px;
+}
+.change-color{
+  height: 40px;
+  width: 148px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  color: #fff;
+  background-color: #4e75ff;
+  transition: background-color 250ms ease;
+  border: none;
+}
+
+.change-color:hover,
+.change-color:focus{
+  background-color: #6c8cff;
+  cursor: pointer;
+}
